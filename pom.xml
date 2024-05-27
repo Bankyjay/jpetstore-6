@@ -228,6 +228,13 @@
                   <downloadDir>${project.build.directory}/cargo</downloadDir>
                 </zipUrlInstaller>
               </container>
+              <configuration>
+                <type>standalone</type>
+                <home>${project.build.directory}/cargo/installs/apache-tomcat-9.0.41</home>
+                <properties>
+                  <cargo.servlet.port>8081</cargo.servlet.port>
+                </properties>
+              </configuration>
             <daemon>
               <properties>
                 <cargo.daemon.url>http://localhost:18000</cargo.daemon.url>
